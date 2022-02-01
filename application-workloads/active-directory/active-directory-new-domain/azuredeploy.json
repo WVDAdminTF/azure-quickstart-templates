@@ -56,14 +56,14 @@
         },
         "virtualMachineName": {
             "type": "string",
-            "defaultValue": "adVM",
+            "defaultValue": "DC1",
             "metadata": {
                 "description": "Virtual machine name."
             }
         },
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "adVNET",
+            "defaultValue": "VNET1",
             "metadata": {
                 "description": "Virtual network name."
             }
@@ -105,21 +105,21 @@
         },
         "privateIPAddress": {
             "type": "string",
-            "defaultValue": "10.0.0.4",
+            "defaultValue": "10.0.1.4",
             "metadata": {
                 "description": "Private IP address."
             }
         },
         "subnetName": {
             "type": "string",
-            "defaultValue": "adSubnet",
+            "defaultValue": "Subnet1",
             "metadata": {
                 "description": "Subnet name."
             }
         },
         "subnetRange": {
             "type": "string",
-            "defaultValue": "10.0.0.0/24",
+            "defaultValue": "10.0.1.0/24",
             "metadata": {
                 "description": "Subnet IP range."
             }
@@ -133,7 +133,7 @@
         },
         "availabilitySetName": {
             "type": "string",
-            "defaultValue": "adAvailabiltySet",
+            "defaultValue": "AvSet1",
             "metadata": {
                 "description": "Availability set name."
             }
