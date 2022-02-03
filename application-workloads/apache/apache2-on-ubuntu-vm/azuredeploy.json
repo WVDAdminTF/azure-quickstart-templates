@@ -83,11 +83,11 @@
     "imageOffer": "UbuntuServer",
     "nicName": "myVMNic",
     "addressPrefix": "11.0.0.0/16",
-    "subnetName": "Subnet",
+    "subnetName": "Subnet1",
     "subnetPrefix": "11.0.1.0/24",
     "publicIPAddressName": "ResearchApp1IP",
     "publicIPAddressType": "Dynamic",
-    "vmName": "MyUbuntuVM",
+    "vmName": "ResearchApp1",
     "virtualNetworkName": "VNET2",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "linuxConfiguration": {
