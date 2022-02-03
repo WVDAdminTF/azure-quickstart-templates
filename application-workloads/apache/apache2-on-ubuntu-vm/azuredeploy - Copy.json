@@ -82,13 +82,13 @@
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "nicName": "myVMNic",
-    "addressPrefix": "11.0.0.0/16",
+    "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
-    "subnetPrefix": "11.0.1.0/24",
-    "publicIPAddressName": "ResearchApp1IP",
+    "subnetPrefix": "10.0.0.0/24",
+    "publicIPAddressName": "myPublicIP",
     "publicIPAddressType": "Dynamic",
     "vmName": "MyUbuntuVM",
-    "virtualNetworkName": "VNET2",
+    "virtualNetworkName": "MyVNET",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "linuxConfiguration": {
       "disablePasswordAuthentication": true,
@@ -101,7 +101,7 @@
         ]
       }
     },
-    "networkSecurityGroupName": "NSG-Subnet1"
+    "networkSecurityGroupName": "default-NSG"
   },
   "resources": [
     {
