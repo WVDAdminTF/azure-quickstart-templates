@@ -131,7 +131,7 @@
     },
     "HostVirtualMachineSize": {
       "type": "string",
-      "defaultValue": "Standard_D4s_v3",
+      "defaultValue": "Standard_D8s_v3",
       "allowedValues": [
         "Standard_D2_v3",
         "Standard_D4_v3",
@@ -303,7 +303,7 @@
           "imageReference": {
             "publisher": "MicrosoftWindowsServer",
             "offer": "WindowsServer",
-            "sku": "2016-Datacenter",
+            "sku": "2022-datacenter-g2",
             "version": "latest"
           },
           "osDisk": {
@@ -319,7 +319,7 @@
               "lun": 0,
               "name": "[format('{0}DataDisk1', parameters('HostVirtualMachineName'))]",
               "createOption": "Empty",
-              "diskSizeGB": 1024,
+              "diskSizeGB": 256,
               "caching": "ReadOnly",
               "managedDisk": {
                 "storageAccountType": "Premium_LRS"
