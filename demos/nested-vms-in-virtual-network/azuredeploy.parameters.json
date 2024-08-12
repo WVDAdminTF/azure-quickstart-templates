@@ -2,65 +2,17 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "_artifactsLocation": {
-      "value": "[deployment().properties.templateLink.uri]"
-    },
-    "_artifactsLocationSasToken": {
-      "value": null
-    },
-    "location": {
-      "value": "[resourceGroup().location]"
-    },
-    "HostPublicIPAddressName": {
-      "value": "HVHOSTPIP"
-    },
-    "virtualNetworkName": {
-      "value": "VirtualNetwork"
-    },
-    "virtualNetworkAddressPrefix": {
-      "value": "10.0.0.0/22"
-    },
-    "NATSubnetName": {
-      "value": "NAT"
-    },
-    "NATSubnetPrefix": {
-      "value": "10.0.0.0/24"
-    },
-    "hyperVSubnetName": {
-      "value": "Hyper-V-LAN"
-    },
-    "hyperVSubnetPrefix": {
-      "value": "10.0.1.0/24"
-    },
-    "ghostedSubnetName": {
-      "value": "Ghosted"
-    },
-    "ghostedSubnetPrefix": {
-      "value": "10.0.2.0/24"
-    },
-    "azureVMsSubnetName": {
-      "value": "Azure-VMs"
-    },
-    "azureVMsSubnetPrefix": {
-      "value": "10.0.3.0/24"
-    },
-    "HostNetworkInterface1Name": {
-      "value": "HVHOSTNIC1"
-    },
-    "HostNetworkInterface2Name": {
-      "value": "HVHOSTNIC2"
-    },
-    "HostVirtualMachineName": {
-      "value": "HVHOST"
-    },
-    "HostVirtualMachineSize": {
-      "value": "Standard_D8s_v3"
-    },
-    "HostAdminUsername": {
-      "value": "vmadmin"
+    "HostAdminUserName": {
+      "value": "vmadmin",
+      "metadata": {
+        "description": "Admin Username for the Host Virtual Machine"
+      }
     },
     "HostAdminPassword": {
-      "value": "P@55w.rd1234"
+      "value": "P@55w.rd1234",
+      "metadata": {
+        "description": "Admin User Password for the Host Virtual Machine"
+      }
     }
   }
 }
